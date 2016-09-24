@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		E85FD9C21D68304700BBB7D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85FD9C11D68304700BBB7D4 /* AppDelegate.swift */; };
-		E85FD9C41D68304700BBB7D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85FD9C31D68304700BBB7D4 /* ViewController.swift */; };
 		E85FD9C71D68304700BBB7D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85FD9C51D68304700BBB7D4 /* Main.storyboard */; };
 		E85FD9C91D68304700BBB7D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E85FD9C81D68304700BBB7D4 /* Assets.xcassets */; };
 		E85FD9CC1D68304700BBB7D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85FD9CA1D68304700BBB7D4 /* LaunchScreen.storyboard */; };
+		E85FD9D41D68338F00BBB7D4 /* AccordionCellsDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85FD9D31D68338F00BBB7D4 /* AccordionCellsDataClass.swift */; };
+		E85FD9D61D6834F200BBB7D4 /* AccordionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85FD9D51D6834F200BBB7D4 /* AccordionTableViewController.swift */; };
+		E85FD9DA1D68383400BBB7D4 /* PrimaryAccordionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85FD9D91D68383400BBB7D4 /* PrimaryAccordionTableViewCell.swift */; };
+		E85FD9DC1D68384300BBB7D4 /* SecondaryAccordionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85FD9DB1D68384300BBB7D4 /* SecondaryAccordionTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E85FD9BE1D68304700BBB7D4 /* PhraseBookAccordion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhraseBookAccordion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E85FD9C11D68304700BBB7D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E85FD9C31D68304700BBB7D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E85FD9C61D68304700BBB7D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E85FD9C81D68304700BBB7D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E85FD9CB1D68304700BBB7D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E85FD9CD1D68304700BBB7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E85FD9D31D68338F00BBB7D4 /* AccordionCellsDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccordionCellsDataClass.swift; sourceTree = "<group>"; };
+		E85FD9D51D6834F200BBB7D4 /* AccordionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccordionTableViewController.swift; sourceTree = "<group>"; };
+		E85FD9D91D68383400BBB7D4 /* PrimaryAccordionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryAccordionTableViewCell.swift; sourceTree = "<group>"; };
+		E85FD9DB1D68384300BBB7D4 /* SecondaryAccordionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryAccordionTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				E85FD9C11D68304700BBB7D4 /* AppDelegate.swift */,
-				E85FD9C31D68304700BBB7D4 /* ViewController.swift */,
+				E85FD9D31D68338F00BBB7D4 /* AccordionCellsDataClass.swift */,
+				E85FD9D51D6834F200BBB7D4 /* AccordionTableViewController.swift */,
 				E85FD9C51D68304700BBB7D4 /* Main.storyboard */,
+				E85FD9D91D68383400BBB7D4 /* PrimaryAccordionTableViewCell.swift */,
+				E85FD9DB1D68384300BBB7D4 /* SecondaryAccordionTableViewCell.swift */,
 				E85FD9C81D68304700BBB7D4 /* Assets.xcassets */,
 				E85FD9CA1D68304700BBB7D4 /* LaunchScreen.storyboard */,
 				E85FD9CD1D68304700BBB7D4 /* Info.plist */,
@@ -96,6 +105,7 @@
 				TargetAttributes = {
 					E85FD9BD1D68304700BBB7D4 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Y3967M496H;
 					};
 				};
 			};
@@ -135,8 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E85FD9C41D68304700BBB7D4 /* ViewController.swift in Sources */,
 				E85FD9C21D68304700BBB7D4 /* AppDelegate.swift in Sources */,
+				E85FD9D61D6834F200BBB7D4 /* AccordionTableViewController.swift in Sources */,
+				E85FD9D41D68338F00BBB7D4 /* AccordionCellsDataClass.swift in Sources */,
+				E85FD9DA1D68383400BBB7D4 /* PrimaryAccordionTableViewCell.swift in Sources */,
+				E85FD9DC1D68384300BBB7D4 /* SecondaryAccordionTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,10 +264,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PhraseBookAccordion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bolatashim.PhraseBookAccordion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -262,10 +278,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PhraseBookAccordion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bolatashim.PhraseBookAccordion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -288,6 +307,7 @@
 				E85FD9D21D68304700BBB7D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
